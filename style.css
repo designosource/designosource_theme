@@ -1,0 +1,349 @@
+/*
+Theme Name: designosource
+Theme URI: http://designosource.be/
+Author: designosource 2013-2014
+Author URI: http://designosource.be/
+Description: Het thema van designosource 2013-2014
+Version: 0.00000001
+*/
+
+/* Apply a natural box layout model to all elements: http://paulirish.com/2012/box-sizing-border-box-ftw/ */
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+.chromeframe {position: absolute; top: 0;}
+
+/* Ok, this is where the fun starts.
+-------------------------------------------------------------------------------*/
+
+/* A Linux- and Windows-friendly sans-serif font stack: http://prospects.mhurrell.co.uk/post/updating-the-helvetica-font-stack */
+body {font: 13px Helmet, Freesans, sans-serif;}
+
+/* Using local fonts? Check out Font Squirrel's webfont generator: http://www.fontsquirrel.com/tools/webfont-generator */
+
+/* We like off-black for text. */
+body, select, input, textarea {color: #333;}
+
+a {color: #03f;}
+a:hover {color: #69f;}
+
+/* Custom text-selection colors (remove any text shadows: http://twitter.com/miketaylr/status/12228805301) */
+::-moz-selection{background: #bd2c2f; color: #fff; text-shadow: none;}
+::selection {background: #bd2c2f; color: #fff; text-shadow: none;}
+
+/*	j.mp/webkit-tap-highlight-color */
+a:link {-webkit-tap-highlight-color: #fcd700;}
+
+ins {background-color: #fcd700; color: #000; text-decoration: none;}
+mark {background-color: #fcd700; color: #000; font-style: italic; font-weight: bold;}
+
+/* Mozilla dosen't style place holders by default */
+input:-moz-placeholder { color:#a9a9a9; }
+textarea:-moz-placeholder { color:#a9a9a9; }
+
+/* 12-column responsive grid */
+
+.row {
+    clear: both;
+    max-width: 1040px;
+    margin: 0 auto;
+}
+
+[class^="col-"] {
+    float: left;
+    margin: 0 3.84615384615% 0 0;
+    list-style: none;
+    position: relative;
+}
+
+[class^="col-"]:last-child {
+    margin: 0;
+}
+
+.col-1 { width: 4.8076923077% }
+.col-2 { width: 13.4615384615% }
+.col-3 { width: 22.1153846154% }
+.col-4 { width: 30.7692307692% }
+.col-5 { width: 39.4230769231% }
+.col-6 { width: 48.0769230769% }
+.col-7 { width: 56.7307692308% }
+.col-8 { width: 65.3846153846% }
+.col-9 { width: 74.0384615385% }
+.col-10 { width: 82.6923076923% }
+.col-11 { width: 91.3461538462% }
+.col-12 { width: 100%; margin: 0 }
+
+/* And here begins the WordPress fun.
+-------------------------------------------------------------------------------*/
+
+#page-wrap {width: 1140px; margin: 20px auto;}
+
+.post {}
+
+.entry-content {}
+.entry-content a {}
+.entry-content a:hover {}
+
+#meta {}
+.postmetadata {}
+
+#sidebar {}
+
+.navgation {}
+.next-posts {}
+.prev-posts {}
+
+#searchform {}
+#s {}
+#searchsubmt {}
+
+ol.commentlist {list-style: none;}
+ol.commentlist li {}
+ol.commentlist li.alt {}
+ol.commentlist li.bypostauthor {}
+ol.commentlist li.byuser {}
+ol.commentlist li.comment-author-admin {}
+ol.commentlist li.comment {border-bottom: 1px dotted #666; padding: 10px;}
+ol.commentlist li.comment div.comment-author {}
+ol.commentlist li.comment div.vcard {}
+ol.commentlist li.comment div.vcard cite.fn {font-style: normal;}
+ol.commentlist li.comment div.vcard cite.fn a.url {}
+ol.commentlist li.comment div.vcard img.avatar {float:right; margin: 0 0 10px 10px;}
+ol.commentlist li.comment div.vcard img.avatar-32 {}
+ol.commentlist li.comment div.vcard img.photo {}
+ol.commentlist li.comment div.vcard span.says {}
+ol.commentlist li.comment div.commentmetadata {}
+ol.commentlist li.comment div.comment-meta {font-size: 10px;}
+ol.commentlist li.comment div.comment-meta a {color: #ccc;}
+ol.commentlist li.comment p {}
+ol.commentlist li.comment ul {}
+ol.commentlist li.comment div.reply {font-size: 11px;}
+ol.commentlist li.comment div.reply a {font-weight: bold;}
+ol.commentlist li.comment ul.children {list-style: none; margin: 10px 0 0;}
+ol.commentlist li.comment ul.children li {}
+ol.commentlist li.comment ul.children li.alt {}
+ol.commentlist li.comment ul.children li.bypostauthor {}
+ol.commentlist li.comment ul.children li.byuser {}
+ol.commentlist li.comment ul.children li.comment {}
+ol.commentlist li.comment ul.children li.comment-author-admin {}
+ol.commentlist li.comment ul.children li.depth-2 {border-left: 5px solid #555; margin: 0 0 10px 10px;}
+ol.commentlist li.comment ul.children li.depth-3 {border-left: 5px solid #999; margin: 0 0 10px 10px;}
+ol.commentlist li.comment ul.children li.depth-4 {border-left: 5px solid #bbb; margin: 0 0 10px 10px;}
+ol.commentlist li.comment ul.children li.depth-5 {}
+ol.commentlist li.comment ul.children li.odd {}
+ol.commentlist li.even {background: #fff;}
+ol.commentlist li.odd {background: #f6f6f6;}
+ol.commentlist li.parent {border-left: 5px solid #111;}
+ol.commentlist li.thread-alt {}
+ol.commentlist li.thread-even {}
+ol.commentlist li.thread-odd {}
+
+/* Global styles */
+html
+{
+	overflow-y: auto;
+}
+
+body{
+	background-color: #030508;
+	background-image: url(_/img/bg.jpg);
+	font-family: "Open Sans", sans-serif;
+	font-weight: 400;
+	font-size: 1em;
+	color: #fff;
+	overflow: hidden;
+}
+
+h1, h2, h3, h4, h5, h6
+{
+	font-family: "Raleway", sans-serif;
+}
+
+h1{
+	font-size: 2em;
+	margin-bottom: 0.5em;
+}
+
+h2{
+	font-size: 1.6em;
+	font-weight: 400;
+	margin-bottom: 10px;
+}
+
+h3{
+	font-size: 1.6em;
+	margin-bottom: 20px;
+}
+
+h4{
+	font-size: 1.4em;
+}
+
+h5
+{
+	font-size: 1.2em;
+}
+
+h6
+{
+	font-size: 1.0em;
+}
+
+p
+{
+	margin-bottom: 40px;
+	font-size: 14px;
+	line-height: 1.5;
+}
+
+a:link, a:visited, a:hover, a:active{
+	color: #fff;
+	text-decoration: none;
+}
+
+section
+{
+
+	width: 100%;
+}
+
+/* Home
+											 __    __    ______   .___  ___.  _______
+											|  |  |  |  /  __  \  |   \/   | |   ____|
+											|  |__|  | |  |  |  | |  \  /  | |  |__
+											|   __   | |  |  |  | |  |\/|  | |   __|
+											|  |  |  | |  `--'  | |  |  |  | |  |____
+											|__|  |__|  \______/  |__|  |__| |_______|
+*/
+
+
+
+#home
+{
+	min-height: 1000px;
+}
+
+#sterren
+{
+	position: relative;
+	width: 100%;
+}
+
+.star
+{
+	position: absolute;
+	color: #fff;
+	display: block;
+}
+
+#ei{
+	display: block;
+	width: 250px;
+	overflow: hidden;
+	margin: 0 auto;
+	text-align: center;
+	z-index: 20;
+}
+
+#ei img{
+	display: block;
+}
+
+#ei-top{
+	position: absolute;
+	width: 250px;
+	z-index: 15;
+}
+
+#ei-bottom{
+	position: absolute;
+	width: 250px;
+}
+
+#ring{
+	position: absolute;
+	width: 500px;
+	z-index: 14;
+	margin-left: -125px;
+	animation:myrotate 10s infinite;
+	-webkit-animation:myrotate 10s infinite;
+}
+
+@keyframes myrotate
+{
+	0%   {transform:rotate(0deg);}
+	50%  {transform:rotate(5deg);}
+	100%  {transform:rotate(0deg);}
+}
+
+@-webkit-keyframes myrotate /* Safari and Chrome */
+{
+	0%   {-webkit-transform:rotate(0deg);}
+	50%  {-webkit-transform:rotate(5deg);}
+	100%  {-webkit-transform:rotate(0deg);}
+}
+
+.red-arrow
+{
+	display: block;
+	background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAAoCAYAAACiu5n/AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyNpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNS1jMDE0IDc5LjE1MTQ4MSwgMjAxMy8wMy8xMy0xMjowOToxNSAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIChNYWNpbnRvc2gpIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOkVBRjI2QTVCM0U3ODExRTNBMTBGRDQxN0VDQjk4NUY5IiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOkVBRjI2QTVDM0U3ODExRTNBMTBGRDQxN0VDQjk4NUY5Ij4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6RUFGMjZBNTkzRTc4MTFFM0ExMEZENDE3RUNCOTg1RjkiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6RUFGMjZBNUEzRTc4MTFFM0ExMEZENDE3RUNCOTg1RjkiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz5WG3+4AAAEqUlEQVR42tRaaVMUMRDNLotyiYqiiAqUoIAcUoif/e1+8r4P5JBTwYNLWARk2TFd9VLVNZXuzOwOC3ZVWy7JJnnpfn0Eco8ejDYYY3LGL5HVI6uHwniOzauVaHvWWa3X8BTsP3esdisbbFl9bLXkGTtrtZVtQBfzG5eUleStnrPaCJBlqztW9z3zxqx2KmstEuD3Vs9bvSBMop+PWn2DzbjQpj1Wb7Of0byvGVmdLvI6gDiZsvrLM/eW1asBw73P42DPrB4ok69YvSGMfba6xADS5VzOyLoXrQ4wF563Oi3M64JL+2QfGKM8fkBg3yquSLzohfv6hA6xwVyLLN5UJdizsFoDPv+0OuuZ14BLbhbWIUwvnUHzbOAHblCSFrhWo2dsD4f5i8+XALquCt72W72Gz0Vc6r7HECOKIQwwbfKFJUv5hLh+12rBM0YWmGFe0gWvyFXA224WSEvg7ZZnbg/oJskavhtJgOmw72Axjc/XhbE58NkFN7JSR0rAbcgcBuvQmiueeZdxqXlhnSJoWo67Tlwo5E8qByrAcheF8ZmYNQZT8LkJQeoMPn8XeEv0GlbWJa/4YPWPjys+WQnwuRmBosUzdoALK7G5Q8pe/CzDsDDn7ZEnmA0iN0vyBe5skgKOlHznpBWuV+8ZozjwkblTB8Bo0s/y6BG+v+OZ1xXItz9BgygNYFc1TQb43KFUNkvwErdxN4KMtE4v4+00Du6LHz1KINyJeVcqwCTb4KQkdUg/lxLyecBDgya4fI7xdk7wqBGWl6V6YDvEG00ilIkLypxG5OdWwUt4SUruf5/tSyAnWPDZtfrJU8I2Jgh+s7gsUw1gx6dpFCZadO1j0TWeHl4x16aLGcf/J5DbnSu/FihEabBd2X8FgMtZAHaRdy5Qb19jlVFcVnFpEZv7kOXoMtLIpsDvPoW3RUTlw6QlXFJZD/A5D7drV1LFRoyTjjZkoWWhsrsnZAK+7u80NWtSoYMtYgOjNBn3BT4TNZ573K6IFrXsocmwQBMeFFO1omkAO9ebF1IGB90vRFNyuycMHF3CU08ayYO3bco+y0l5Gy8T08oerNyiRM2rqHQWPQdaxwuKu4A9gbf9gXS5oOXbrCzMuxDtdnNwR6mT2YDuCM3DuBKkXEOxVWnfWaksxV46fDISqHl96W0kAPaLEOCOHXAEK68pcxpQb59JsF4dys/WQL6dqfZFsBrZg3v9VeZ0BupfXlz0KeNF8PboJAH7XjpCnZARmvl7yngJhctmtYfNArB76VgO8HlM4LN7hNNKW6LOtywOmhVgB3o7kJ+HYqkwB+s3K9+TXj1OHPAuHg203NiOR0AnvWjoNd7Omgx/lZMlYIOOairAZ4rEN8HpwYArT4b627RSMNkLufYFI79sGhQlpQDYmST97Ulb2MkU3FG7aO3lYiPQpJw6wLvogCrJmYfCq8epBuzq7c8pD05z32XN21oBNqiMVhNG2TJ4u3KcBzpuwATiY0LX3jT+18r/CjAJvYO9CLg2XcirSvrb0wiY5BdyalkAS7+s3q/FQWoF2PF5Tcjba7U6RKGGgMtwbf5XNlGgtcxcclFUy784Onn5J8AAx3U/Asp1sQUAAAAASUVORK5CYII=);
+	background-repeat: no-repeat;
+	background-position: center center;
+	width: 60px;
+	height: 40px;
+	margin: 50px auto;
+	cursor: pointer;
+}
+
+.linkbutton{
+	background-image: -webkit-linear-gradient(top, #c1352e, #b3312b);
+	background-image: linear-gradient(top, #c1352e, #b3312b);
+	padding: 5px 10px;
+	border: 1px solid #b3312b;
+	border-radius: 3px;
+	box-shadow: inset 0 1px 0 0 #b3312b;
+	color: #fff;
+	text-align: center;
+	clear: both;
+}
+
+.linkbutton:hover
+{
+    background-color: #ea3c33;
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #ea3c33), color-stop(100%, #f13e35));
+    background-image: -webkit-linear-gradient(top, #ea3c33, #f13e35);
+    background-image: linear-gradient(top, #ea3c33, #f13e35);
+    box-shadow: inset 0 1px 0 0 #ea3c33;
+}
+
+.linkbutton:active {
+    border: 1px solid #c1352e;
+    border-bottom: 1px solid #c1352e;
+    -webkit-box-shadow: inset 0 0 8px 4px #c1352e, 0 1px 0 0 #b3312b;
+    -moz-box-shadow: inset 0 0 8px 4px #c1352e, 0 1px 0 0 #b3312b;
+    box-shadow: inset 0 0 8px 4px #c1352e, 0 1px 0 0 #b3312b;
+}
+
+
+
+/* Print styles!
+-------------------------------------------------------------------------------*/
+@media print {
+
+}
+
+
+/* Media queries!
+-------------------------------------------------------------------------------*/
+
+/* Consider this: www.cloudfour.com/css-media-query-for-mobile-is-fools-gold/ */
+@media screen and (max-device-width: 480px) {
+
+}
+
+@media all and (orientation: portrait) {
+
+}
+
+@media all and (orientation: landscape) {
+
+}

@@ -1,0 +1,480 @@
+body{
+    background-image: none;
+}
+
+#flip-picture, #lens-flare
+{
+    display: none !important;
+}
+
+#wrapper, #sterren
+{
+    margin-top: 100px !important;
+    top: 300px !important;
+}
+
+#sterren
+{
+    margin-bottom: -800px;
+    display: none !important;
+}
+
+#home
+{
+
+}
+
+#team
+{
+    margin-bottom: 300px;
+}
+
+#over-ons
+{
+
+}
+
+#werkwijze
+{
+
+}
+
+#projecten
+{
+
+}
+
+#designoverse
+{
+    min-height: 2000px;
+}
+
+#contact
+{
+    position: relative;
+    bottom: 0;
+}
+
+header
+{
+    transform: translateY(350px);
+    -webkit-transform: translateY(350px);
+}
+
+.big-title
+{
+    font-size: 90px;
+}
+
+.big-title .smaller
+{
+    font-size: 60px;
+}
+
+
+#bol-down
+{
+    background-size: 100%;
+    width: 200px;
+    height: 200px;
+    top: 250px;
+    transform: translateX(20px);
+    -webkit-transform: translateX(20px);
+}
+
+#bol-line
+{
+    display: none;
+}
+
+#member-info
+{
+    margin-top: 130px;
+}
+
+#astronauten
+{
+    display: block;
+    position: relative;
+    opacity: 1;
+    margin-top: 400px;
+    border-bottom: 5px solid #bd2c2f;
+    -webkit-box-shadow: 0px 5px 7px rgba(189, 44, 47, 0.8);
+    -moz-box-shadow:    0px 5px 7px rgba(189, 44, 47, 0.8);
+    box-shadow:         0px 5px 7px rgba(189, 44, 47, 0.8);
+    right: 0;
+}
+
+#bottom-img
+{
+    display: none !important;
+}
+
+#contact
+{
+    color: #fff;
+}
+
+#contact i
+{
+    margin-right: 10px;
+    color: #c1352e;
+}
+
+#contact form input, #contact form textarea
+{
+    background: rgba(255,255,255,0.3);
+    border-radius: 5px;
+    padding: 5px;
+    color: #000;
+    border: none;
+}
+
+#contact form input[type="submit"]
+{
+    background: #c1352e;
+    color: #fff;
+    padding: 10px 15px;
+    -webkit-appearance: none;
+}
+
+@media screen and (max-width: 410px) {
+    #ei{
+        width: 150px;
+    }
+
+    #ei-top{
+        width: 150px;
+    }
+
+    #ei-bottom{
+        width: 150px;
+    }
+
+    #ring{
+        width: 300px;
+        margin-left: -75px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+
+    #wrapper
+    {
+        margin-top: 20px !important;
+        top: 0 !important;
+    }
+
+    header
+    {
+        transform: translateY(200px);
+        -webkit-transform: translateY(200px);
+        margin-bottom: 230px;
+    }
+
+    #home
+    {
+        min-height: 0;
+    }
+
+    #bol-down
+    {
+        margin: 0 auto;
+        transform: translateX(0px);
+        -webkit-transform: translateX(0px);
+    }
+
+    #member-info
+    {
+        left: 5%;
+        width: 100%;
+        margin-top: 210px;
+    }
+
+    #astronauten
+    {
+        margin-top: 50px;
+    }
+
+    #astronauten .voor, #astronauten .achter
+    {
+        position: relative;
+        right: 10%;
+    }
+
+    #astronauten:before
+    {
+        content: "Druk op de hoofden of de armen";
+        margin: 0 auto;
+        font-size: 10px;
+        font-weight: 300;
+        margin-bottom: 350px;
+    }
+
+    #over-ons
+    {
+        margin-bottom: 200px;
+    }
+
+    #over-ons .inner
+    {
+        width: 100%;
+    }
+
+    #over-ons .holo-screen
+    {
+        margin-bottom: 75px;
+    }
+
+    .big-title
+    {
+        font-size: 50px;
+    }
+
+    .big-title .smaller
+    {
+        font-size: 30px;
+    }
+
+    .big-title .quote
+    {
+        top: 0;
+    }
+
+    .big-title .quote-rechts
+    {
+        left: 60%;
+        top: 65px;
+    }
+
+    #werkwijze section h3
+    {
+        font-size: 30px;
+        margin-top: 0;
+    }
+
+    #werkwijze section p
+    {
+        font-weight: 300;
+        line-height: 1.7;
+    }
+
+    #designoverse
+    {
+        min-height: 0;
+        margin-bottom: 200px;
+    }
+
+    #designoverse-inhoud
+    {
+        padding-top: 0;
+    }
+
+    #designoverse .unit.half:first-child
+    {
+        display: none;
+    }
+
+    #cntctfrm_contact_form input.text, #cntctfrm_contact_form textarea, #cntctfrm_contact_message, #cntctfrm_contact_name, #cntctfrm_contact_email, #cntctfrm_contact_subject {
+        width: 100%;
+    }
+
+
+}
+
+@media screen and (max-width: 600px)
+{
+    #projecten #projecten-timeline .project .imac-full
+    {
+        left: 35px;
+    }
+
+    #projecten #projecten-timeline .project .tekst
+    {
+        padding-left: 0;
+        top: 0px;
+        padding-top: 65%;
+    }
+
+    #projecten-timeline .project .tekst p
+    {
+		margin: 0 auto;
+		margin-bottom: 30px;
+	}
+
+    #projecten-timeline .project .imac
+    {
+        width: 80%;
+        background-size: 100%;
+    }
+
+    #projecten-timeline .project .imac img
+    {
+        width: 92%;
+        height: auto;
+        left: 4%;
+        top: 3.5%;
+    }
+
+    #projecten-timeline .ion-engine.left
+    {
+        left: 25%;
+        top: 165px;
+    }
+
+    #projecten-timeline .ion-engine.right
+    {
+        display: none;
+
+    }
+}
+
+
+@media screen and (min-width: 410px) and (max-width: 600px) {
+    #ei{
+        width: 200px;
+    }
+
+    #ei-top{
+        width: 200px;
+    }
+
+    #ei-bottom{
+        width: 200px;
+    }
+
+    #ring{
+        width: 400px;
+        margin-left: -100px;
+    }
+
+    header
+    {
+        transform: translateY(300px);
+        -webkit-transform: translateY(300px);
+        margin-bottom: 330px;
+    }
+}
+
+@media screen and (min-width: 600px) {
+
+    header
+    {
+        transform: translateY(370px);
+        -webkit-transform: translateY(370px);
+        margin-bottom: 400px;
+    }
+
+    #designoverse .unit.half:first-child
+    {
+        display: block;
+    }
+
+    #designoverse #designoverse-inhoud .television
+    {
+        left: 15%;
+    }
+
+    #designoverse-inhoud
+    {
+        padding-top: 230px;
+    }
+
+    #astronauten .voor, #astronauten .achter
+    {
+        right: 5%;
+    }
+
+    #over-ons .inner
+    {
+        width: 95%;
+    }
+
+    .big-title
+    {
+        font-size: 90px;
+    }
+
+    .big-title .smaller
+    {
+        font-size: 60px;
+    }
+
+    .big-title .quote
+    {
+        top: 30px;
+    }
+
+    .big-title .quote-rechts
+    {
+        top: 200px;
+        left: 95%;
+    }
+
+    #designoverse #designoverse-inhoud .television {
+        left: 22.5%;
+    }
+}
+
+
+@media screen and (max-width: 1023px) {
+    #projecten-timeline
+    {
+        margin-top: 300px;
+    }
+
+    #projecten-timeline li
+    {
+        margin-bottom: 700px;
+    }
+
+    #projecten-timeline li.j2010, #projecten-timeline li.j2011, #projecten-timeline li.j2012
+    {
+        display: none;
+    }
+
+    #projecten-timeline .project
+    {
+        text-align: center;
+    }
+
+
+
+    #projecten-timeline .project .imac-full
+    {
+        position: relative;
+        left: 22.5%;
+    }
+
+    #projecten-timeline .project .tekst
+    {
+        position: relative;
+        margin-left: 0;
+        width: 100%;
+        top: 400px;
+    }
+}
+
+
+#designoverse-inhoud
+{
+    text-align: center;
+    margin-top: 300px;
+}
+
+#designoverse-inhoud .television
+{
+    left: 22.5%;
+}
+
+#designoverse-inhoud > div
+{
+    float: left;
+    width: 100%;
+}
+
+#designoverse-inhoud > div:first-child
+{
+    margin-bottom: 350px;
+}
+
