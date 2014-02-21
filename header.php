@@ -43,12 +43,6 @@
 	}
 	?>
 
-
-
-
-
-
-
 	<!--Google will often use this as its description of your page/site. Make it good.-->
 	<link rel="author" href="humans.txt" />
 
@@ -90,7 +84,7 @@
 	} else if(is_home() || is_page())  {
 		echo '<meta name="twitter:description" content="'.of_get_option("meta_app_twt_description").'" />';
 	}
-	echo '<meta name="twitter:url" content="'.of_get_option("meta_app_twt_url").'" />';
+	echo '<meta name="twitter:url" content="http://designosource.be'.$_SERVER['REQUEST_URI'].'" />';
 	} ?>
 
 	<?php if (true == of_get_option('meta_app_fb_title')) {
@@ -98,14 +92,15 @@
 	echo '<meta property="og:title" content="'.wp_title( '|', false, 'right' ).'" />';
 	if (is_single()) {
 	?>
-		<meta name="og:description" content="Post op designoverse, het blog van designosource." />
+		<meta property="og:description" content="Post op designoverse, het blog van designosource." />
 	<?php
-	} else if(is_home() || is_page())  {
-		echo '<meta name="og:description" content="'.of_get_option("meta_app_fb_url").'" />';
+	} else{
+		echo '<meta property="og:description" content="'.of_get_option("meta_app_fb_url").'" />';
 	}
-	echo '<meta property="og:url" content="'.of_get_option("meta_app_fb_url").'" />';
-	echo '<meta property="og:image" content="'.of_get_option("meta_app_fb_image").'" />';
-	} ?>
+	echo '<meta property="og:url" content="http://designosource.be'.$_SERVER['REQUEST_URI'].'" />';
+	}
+	echo '<meta property="og:image" content="'.get_template_directory_uri() . '/_/img/logo.png" />';
+	?>
 
 	<link rel="icon" type="image/png" href="<?php echo get_template_directory_uri() . '/_/img/favicon.png'; ?>" />
 	<link rel="profile" href="http://gmpg.org/xfn/11" />
