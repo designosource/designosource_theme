@@ -412,6 +412,26 @@
 				<a href="http://facebook.com/designosource" target="_blank"><i class="fa fa-facebook fa-2x"></i></a>
 				<a href="http://dribbble.com/designosource" target="_blank"><i class="fa fa-dribbble fa-2x"></i></a>
 				<a href="http://vimeo.com/designosource" target="_blank"><i class="fa fa-vimeo-square fa-2x"></i></a>
+				<p>
+				<!-- Begin MailChimp Signup Form -->
+				<div id="mc_embed_signup">
+				<form action="http://designosource.us7.list-manage.com/subscribe/post?u=a8c08f548f562436553aeb031&amp;id=cb347f2f45" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+					<h2>Blijf op de hoogte van onze activiteiten</h2>
+				<div class="mc-field-group">
+					<label for="mce-EMAIL">Email Address </label>
+					<input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
+				</div>
+					<div id="mce-responses" class="clear">
+						<div class="response" id="mce-error-response" style="display:none"></div>
+						<div class="response" id="mce-success-response" style="display:none"></div>
+					</div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+				    <div style="position: absolute; left: -5000px;"><input type="text" name="b_a8c08f548f562436553aeb031_cb347f2f45" value=""></div>
+					<div class="clear"><input type="submit" style="width:100px;height:auto;cursor: pointer; margin: 0pt; text-align: center;margin-bottom:10px;" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+				</form>
+				</div>
+
+				<!--End mc_embed_signup-->
+				</p>
 			</div>
 			<div class="unit half">
 			<?php
