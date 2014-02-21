@@ -99,13 +99,13 @@ $(function() {
   });
 
   $("#columns").css("min-height", ($(window).height() - 200));
-  $('#columns').isotope( 'reLayout' );
+  $('#columns').isotope('reLayout');
 });
 
 
 
 $(window).smartresize(function(){
-    $('#columns').isotope( 'reLayout');
+    $('#columns').isotope('reLayout');
 
     $("#columns").css("min-height", ($(window).height() - 200));
 
@@ -151,45 +151,7 @@ if(!isMobile.any() && $(window).width() >= 1024){
     Skroller.initSkrollr();
 }
 
-//ts = timeliner settings
-var tsstats,
-TimelinerStats = {
 
-    settings : {
-        windowWidth : $(window).width(),
-        cheight : 75
-    },
-
-    init: function(){
-        //Set settings
-        tsstats = this.settings;
-
-        //Initialize timeliner
-        this.initializeTimeliner();
-    },
-
-    initializeTimeliner: function(){
-        $('#stats').timeliner({
-            containerwidth: tsstats.windowWidth,
-            containerheight: tsstats.cheight,
-            controls_always_visible: false,
-            timelinewidth: tsstats.windowWidth / 2,
-            timelineheight: 0,
-            showtimedisplay: false,
-            timedisplayposition: false,
-            showtotaltime: false,
-            showtooltiptime: false,
-            tooltipposition: "below",
-            keyboard: false,
-            interval: 15,
-            timelineposition: "bottom",
-            transition: 'slide'
-        });
-    }
-
-};
-
-TimelinerStats.init();
 
 });
 
